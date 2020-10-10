@@ -1,8 +1,8 @@
 <?php
 
-namespace App;
+namespace App\Models;
 
-use App\Permission;
+use App\Models\Permission;
 use Illuminate\Database\Eloquent\Model;
 
 class Moduale extends Model
