@@ -19,8 +19,10 @@
     * Licensed under MIT (https://github.com/DashboardPack/architectui-html-theme-free/blob/master/LICENSE)
     =========================================================
     * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-    -->
+	-->
 	<link href="{{asset('main.css')}}" rel="stylesheet">
+	<link href="{{asset('css/app.css')}}" rel="stylesheet">
+	@stack('css')
 </head>
 
 <body>
@@ -38,6 +40,8 @@
 		</div>
 	</div>
 	<script type="text/javascript" src="{{asset('assets/scripts/main.js')}}"></script>
+	<script type="text/javascript" src="{{asset('js/app.js')}}"></script>
+	@stack('js')
 </body>
 
 </html>
