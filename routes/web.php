@@ -22,7 +22,7 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', [HomeController::class,'index'])->name('home');
-Route::group(['as' => 'app', 'middleware' => ['auth']], function () {
+Route::group(['as' => 'app.', 'middleware' => ['auth']], function () {
     Route::get('dashboard','App\Http\Controllers\Backend\DashboardController')->name('dashboard');
     Route::resource('role', 'App\Http\Controllers\Backend\RolesController');
 });
